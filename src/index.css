@@ -1,0 +1,18 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --orange: #E8620A;
+  --orange-light: #F4874B;
+  --orange-dark: #C4520A;
+  --white: #FFFFFF;
+  --off-white: #FDF8F4;
+  --gray: #6B7280;
+  --dark: #1A1A1A;
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; color: #222; overflow-x: hidden; }
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+button { cursor: pointer; border: none; outline: none; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-thumb { background: var(--orange); border-radius: 3px; }

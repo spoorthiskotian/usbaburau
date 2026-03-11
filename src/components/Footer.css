@@ -1,0 +1,151 @@
+.footer {
+  background: #1A1A1A;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.88rem;
+}
+
+.footer-top {
+  padding: 4rem 2rem 3rem;
+}
+
+.footer-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
+  gap: 3rem;
+}
+
+/* Brand */
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+
+.footer-logo span:first-child {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--orange);
+}
+
+.footer-logo-sub {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.footer-estd {
+  font-size: 0.65rem;
+  color: var(--gray);
+  letter-spacing: 0.05em;
+}
+
+.footer-tagline {
+  font-style: italic;
+  color: var(--orange-light);
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.footer-desc {
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* Columns */
+.footer-col h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  color: var(--orange);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.footer-col ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.5;
+}
+
+.footer-col ul li a {
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-col ul li a:hover {
+  color: var(--orange);
+}
+
+/* Address */
+.footer-col address {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.footer-col address span {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.45rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.6;
+}
+
+/* Dot for group companies */
+.dot {
+  width: 6px;
+  height: 6px;
+  min-width: 6px;
+  background: var(--orange);
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 0.45rem;
+}
+
+/* Bottom bar */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 1.25rem 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
