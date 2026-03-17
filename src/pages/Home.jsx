@@ -5,31 +5,32 @@ import { useInView } from 'react-intersection-observer';
 import { FiArrowRight, FiCheckCircle } from 'react-icons/fi';
 import AnimatedSection from '../components/AnimatedSection';
 import './Home.css';
+import { IoCallSharp } from "react-icons/io5";
 
 const products = [
   {
     title: 'Plywood, Laminates & Veneers',
     desc: 'Wide range of commercial & waterproof plywood, veneers and laminates in various shades, colors and patterns.',
-    img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
-    icon: '🪵',
+    img: 'https://images.unsplash.com/photo-1629976828074-c248d94c82ea?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    
   },
   {
     title: 'Laminated & Vinyl Flooring',
     desc: 'Modern flooring solutions including laminated and vinyl options. We offer installation services through a skilled technical team.',
-    img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
-    icon: '🏠',
+    img: 'https://plus.unsplash.com/premium_photo-1704744490021-fb803cd2067f?q=80&w=1320&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    
   },
   {
     title: 'Interior Solutions',
     desc: 'Complete interior solutions including design, supply of materials, installation and execution for offices and homes.',
     img: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80',
-    icon: '🎨',
+    
   },
   {
     title: 'Industrial Acids & Chemicals',
     desc: 'Leading supplier of industrial chemicals in Dakshina Kannada for metal fabrication, soap, plastic and plywood industries.',
     img: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&q=80',
-    icon: '⚗️',
+    
   },
 ];
 
@@ -129,7 +130,7 @@ export default function Home() {
             <AnimatedSection key={p.title} delay={i * 0.1} className="product-card">
               <div className="product-img-wrap">
                 <img src={p.img} alt={p.title} loading="lazy" />
-                <div className="product-icon">{p.icon}</div>
+               
               </div>
               <div className="product-body">
                 <h3>{p.title}</h3>
@@ -163,7 +164,7 @@ export default function Home() {
           <AnimatedSection className="why-img-wrap" direction="right" delay={0.2}>
             <div className="why-img-stack">
               <img
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80"
+                src="https://images.unsplash.com/photo-1666000740128-ce1ad9847ca0?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Workshop"
                 className="why-img-main"
               />
@@ -181,7 +182,7 @@ export default function Home() {
       <section className="section ply-banner">
         <AnimatedSection className="ply-content">
           <span className="section-tag light">Flagship Product</span>
-          <h2>USP Premium Ply</h2>
+          <h2>USB Premium Ply</h2>
           <p>
             Made from finest A+ grade hardwood. Termite & borer resistant.
             100% distort-free with <strong>8-year warranty</strong>. The ideal
@@ -191,7 +192,7 @@ export default function Home() {
         </AnimatedSection>
         <AnimatedSection className="ply-img" direction="right" delay={0.2}>
           <img
-            src="https://images.unsplash.com/photo-1542621334-a254cf47733d?w=900&q=80"
+            src="https://images.unsplash.com/photo-1611491064644-a9ff17219a53?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBseXdvb2R8ZW58MHx8MHx8fDA%3D"
             alt="Premium Plywood"
           />
         </AnimatedSection>
@@ -206,7 +207,7 @@ export default function Home() {
         <div className="group-grid">
           {['Shishir Enterprises', 'Design Block – Interior Solutions', 'Dwarka Real Estate – Services', 'New Bharath School Supplies', 'Savithri Devi Memorial Charitable Trust (R)'].map((c, i) => (
             <AnimatedSection key={c} delay={i * 0.08} className="group-card">
-              <div className="group-icon">🏢</div>
+             
               <span>{c}</span>
             </AnimatedSection>
           ))}
@@ -220,7 +221,7 @@ export default function Home() {
           <p>Visit our showroom or call our experts today.</p>
           <div className="cta-btns">
             <Link to="/contact" className="btn-primary">Contact Us <FiArrowRight /></Link>
-            <a href="tel:+918242420949" className="btn-outline-white">📞 +91 824 2420949</a>
+            <a href="tel:+918242420949" className="btn-outline-white"> <IoCallSharp />+91 824 2420949</a>
           </div>
         </AnimatedSection>
       </section>

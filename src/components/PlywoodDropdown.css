@@ -1,0 +1,440 @@
+/* ── WRAPPER ── */
+.ply-wrapper {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 3px 28px rgba(0, 0, 0, 0.07);
+  margin-top: 2.5rem;
+  overflow: hidden;
+}
+
+/* ── HEADER ── */
+.ply-header {
+  width: 100%;
+  padding: 1.25rem 1.5rem;
+  background: linear-gradient(90deg, var(--orange), var(--orange-dark));
+  border: none;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ply-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.ply-subtitle {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  margin-top: 0.2rem;
+}
+
+.ply-chevron {
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+}
+
+.ply-chevron.open {
+  transform: rotate(180deg);
+}
+
+/* ── CONTENT ── */
+.ply-content {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+/* ── TABS ── */
+.ply-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.9rem 1.2rem 0.7rem;
+  background: var(--off-white);
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.ply-tab {
+  border: none;
+  border-radius: 999px;
+  padding: 0.45rem 1.1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: #fff;
+  color: var(--dark);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  white-space: nowrap;
+}
+
+.ply-tab.active {
+  background: var(--orange);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(232, 98, 10, 0.4);
+}
+
+.ply-tab:not(.active):hover {
+  background: rgba(232, 98, 10, 0.08);
+  color: var(--orange);
+}
+
+/* ── DESCRIPTION ── */
+.ply-desc {
+  padding: 1.1rem 1.5rem 0.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.ply-desc h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 0.3rem;
+}
+
+.ply-desc p {
+  font-size: 0.88rem;
+  color: var(--gray);
+  max-width: 640px;
+  line-height: 1.6;
+}
+
+/* ── FILTERS ROW ── */
+.ply-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.5rem;
+  background: var(--off-white);
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.ply-search-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 50px;
+  padding: 0.45rem 1rem;
+  background: #fff;
+  flex: 1;
+  min-width: 180px;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.ply-search-wrap:focus-within {
+  border-color: var(--orange);
+  box-shadow: 0 0 0 3px rgba(232, 98, 10, 0.1);
+}
+
+.ply-search-wrap svg {
+  color: var(--gray);
+  flex-shrink: 0;
+}
+
+.ply-search-wrap input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--dark);
+  font-size: 0.88rem;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+.ply-search-wrap input::placeholder {
+  color: #aaa;
+}
+
+.ply-filters select {
+  padding: 0.45rem 0.85rem;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 50px;
+  background: #fff;
+  color: var(--dark);
+  font-size: 0.88rem;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: border-color 0.25s;
+  appearance: auto;
+}
+
+.ply-filters select:focus {
+  outline: none;
+  border-color: var(--orange);
+}
+
+.ply-clear-btn {
+  padding: 0.45rem 1rem;
+  background: none;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 50px;
+  color: var(--gray);
+  font-size: 0.83rem;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.ply-clear-btn:hover {
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+.ply-count {
+  margin-left: auto;
+  font-size: 0.82rem;
+  color: var(--gray);
+  white-space: nowrap;
+  font-style: italic;
+}
+
+/* ── BODY ── */
+.ply-body {
+  padding: 1.5rem 1.5rem 1.75rem;
+}
+
+/* ── PRODUCT GRID ── */
+.ply-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 1.1rem;
+}
+
+.ply-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ply-card {
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--orange);
+  color: #fff;
+  box-shadow: 0 1px 14px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ply-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(232, 98, 10, 0.25);
+}
+
+/* ── CARD IMAGE ── */
+.ply-img-wrap {
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+}
+
+.ply-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.ply-card:hover .ply-img-wrap img {
+  transform: scale(1.06);
+}
+
+/* Category badge on image */
+.ply-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 999px;
+  letter-spacing: 0.03em;
+  backdrop-filter: blur(4px);
+}
+
+/* ── CARD BODY ── */
+.ply-card-body {
+  padding: 0.85rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.ply-brand {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 0.3rem;
+}
+
+.ply-card-body h4 {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.3rem;
+  line-height: 1.35;
+}
+
+.ply-thickness {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 0.4rem;
+}
+
+.ply-rating {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 0.6rem;
+}
+
+.ply-price {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #fff !important;
+  margin-bottom: 0.5rem;
+}
+
+.ply-price span {
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ── VIEW BUTTON ── */
+.ply-view-btn {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: transparent;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+  align-self: flex-start;
+  font-family: 'Inter', sans-serif;
+}
+
+.ply-view-btn:hover {
+  background: #fff;
+  color: var(--orange);
+  transform: translateY(-1px);
+}
+
+/* ── EMPTY STATE ── */
+.ply-empty {
+  padding: 2rem;
+  border-radius: 12px;
+  background: var(--off-white);
+  font-size: 0.88rem;
+  color: var(--gray);
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+/* ── PAGINATION ── */
+.ply-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.75rem 0 0.5rem;
+  border-top: 1px solid #f0f0f0;
+  margin-top: 1.5rem;
+}
+
+.ply-pagination button {
+  padding: 0.55rem 1.4rem;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 50px;
+  background: #fff;
+  color: var(--dark);
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.2s;
+}
+
+.ply-pagination button:hover:not(:disabled) {
+  background: var(--orange);
+  color: #fff;
+  border-color: var(--orange);
+  box-shadow: 0 4px 14px rgba(232, 98, 10, 0.3);
+}
+
+.ply-pagination button:disabled {
+  opacity: 0.38;
+  cursor: not-allowed;
+}
+
+.ply-pagination span {
+  font-size: 0.88rem;
+  color: var(--gray);
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .ply-products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 0.85rem;
+  }
+
+  .ply-filters {
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .ply-search-wrap {
+    min-width: 100%;
+  }
+
+  .ply-count {
+    margin-left: 0;
+    width: 100%;
+    text-align: right;
+  }
+}
+
+@media (max-width: 600px) {
+  .ply-header {
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .ply-body {
+    padding: 1rem;
+  }
+
+  .ply-desc {
+    padding: 0.9rem 1rem 0.5rem;
+  }
+
+  .ply-tabs {
+    padding: 0.75rem 1rem 0.6rem;
+  }
+
+  .ply-pagination {
+    gap: 0.6rem;
+  }
+
+  .ply-pagination button {
+    padding: 0.5rem 1rem;
+    font-size: 0.82rem;
+  }
+}

@@ -4,10 +4,10 @@ import './AboutUs.css';
 
 const timeline = [
   { year: '1949', event: 'Founded in Kannur, Kerala by Sri U.S. Babu Rau to distribute Ciba Dyes Ltd. products across South Canara and North Malabar.' },
-  { year: '1950s', event: 'Opened branches in Udupi and Manipal to serve the growing coastal region market.' },
-  { year: '1970s', event: 'Ventured into new product lines including Laminated Floorings and Wallpapers.' },
-  { year: '2000s', event: 'Headquarters established in Mangalore, GHS Road. Expanded into Interior Solutions division.' },
-  { year: '2010s', event: 'Launched USP Premium Ply – 8-year warranty plywood made from A+ grade hardwood.' },
+  { year: ' ', event: 'Opened branches in Udupi and Manipal to serve the growing coastal region market.' },
+  { year: ' ', event: 'Ventured into new product lines including Laminated Floorings and Wallpapers.' },
+  { year: ' ', event: 'Headquarters established in Mangalore, GHS Road. Expanded into Interior Solutions division.' },
+  { year: ' ', event: 'Launched USP Premium Ply – 8-year warranty plywood made from A+ grade hardwood.' },
   { year: 'Today', event: 'Most trusted company in Dakshina Kannada with 15+ product categories and 5 group companies.' },
 ];
 
@@ -27,14 +27,14 @@ export default function AboutUs() {
       <section className="section founder-section">
         <div className="founder-inner">
           <AnimatedSection direction="left" className="founder-img-wrap">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Founder" className="founder-img" />
+            <img src="https://images.unsplash.com/photo-1721658540032-8e5cfa99052b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Founder" className="founder-img" />
             <div className="founder-badge">Est. 1949</div>
           </AnimatedSection>
           <AnimatedSection direction="right" delay={0.2} className="founder-text">
             <span className="section-tag">The Visionary</span>
-            <h2>Sri U.S. Babu Rau</h2>
+            <h2>U.S. Babu Rau</h2>
             <p>
-              Sri U.S. Babu Rau's willpower, hard work and sincerity took him where he wanted to be.
+              U.S. Babu Rau's willpower, hard work and sincerity took him where he wanted to be.
               His professionalism attracted talented people to work with him. He guided them and gave
               a new direction to the company — a company that now spans multiple business sectors
               and serves thousands of customers across South Canara.
@@ -81,7 +81,7 @@ export default function AboutUs() {
             { icon: '❤️', title: 'Social Responsibility', desc: 'Committed to uplifting the community through charitable initiatives.' },
           ].map((v, i) => (
             <AnimatedSection key={v.title} delay={i * 0.1} className="value-card">
-              <div className="value-icon">{v.icon}</div>
+              {/* <div className="value-icon">{v.icon}</div> */}
               <h3>{v.title}</h3>
               <p>{v.desc}</p>
             </AnimatedSection>

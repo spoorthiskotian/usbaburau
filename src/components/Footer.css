@@ -22,25 +22,22 @@
   flex-direction: column;
   line-height: 1.2;
   margin-bottom: 0.75rem;
+  align-items: flex-start;
+  
 }
-
-.footer-logo span:first-child {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: var(--orange);
-}
-
 .footer-logo-sub {
-  font-family: 'Playfair Display', serif;
-  font-size: 1rem;
-  color: #fff;
+  font-family: 'Allura', cursive;
+  font-size: 2.3rem;
+  white-space: nowrap;
 }
 
 .footer-estd {
   font-size: 0.65rem;
   color: var(--gray);
   letter-spacing: 0.05em;
+  margin-top: 0.1rem;
+  align-self:center; 
+  
 }
 
 .footer-tagline {
@@ -102,7 +99,7 @@
   align-items: flex-start;
   gap: 0.45rem;
   color: rgba(255, 255, 255, 0.65);
-  line-height: 1.6;
+  line-height: 1.0;
 }
 
 /* Dot for group companies */

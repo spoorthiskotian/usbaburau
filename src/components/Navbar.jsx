@@ -21,8 +21,11 @@ export default function Navbar() {
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', onScroll);
+    // Check on mount too (in case page is already scrolled)
+    onScroll();
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
+
 
   useEffect(() => { setMenuOpen(false); }, [location]);
 
@@ -37,8 +40,7 @@ export default function Navbar() {
         {/* REPLACE THIS DIV WITH YOUR <img src={logo} /> */}
         <Link to="/" className="nav-logo">
           <div className="logo-placeholder">
-            <span>U.S.</span>
-            <span className="logo-sub">Babu Rau</span>
+            <span className="logo-full">U.S.Babu Rau</span>
             <span className="logo-estd">Estd. 1949</span>
           </div>
         </Link>

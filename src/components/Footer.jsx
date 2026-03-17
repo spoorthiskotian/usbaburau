@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FiPhone, FiPrinter, FiMail, FiGlobe, FiMapPin } from 'react-icons/fi';
 
+import { FaMobileAlt } from "react-icons/fa";
 import './Footer.css';
 
 const groupCompanies = [
@@ -21,8 +22,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="footer-brand">
             <div className="footer-logo">
-              <span>U.S.</span>
-              <span className="footer-logo-sub">Babu Rau</span>
+              <span className="footer-logo-sub">U.S.Babu Rau</span>
               <span className="footer-estd">Estd. 1949</span>
             </div>
             <p className="footer-tagline">Get all materials under one roof</p>
@@ -56,25 +56,24 @@ export default function Footer() {
             <h4>Head Office</h4>
             <address>
               <span>
-                <FiMapPin size={14} />
+                <FiMapPin />
                 #13/7/858/1, Felix Pai Bazaar,<br />
                 Next to Janatha Bazaar,<br />
                 G.H.S Road, Mangalore – 575 001
               </span>
-              <span><FiPhone size={14} /> +91 824 2420949, 2424249</span>
-              <span><FiPrinter size={14} /> Fax: +91 824 4279949</span>
-              <span><FiPrinter size={14} /> Fax: +91 824 4279949</span>
+              <span><FiPhone  /> +91 824 2420949, 2424249</span>
+              <span><FiPrinter  /> Fax: +91 824 4279949</span>
 
-              <span>📱 Mobile: +91 9448144949</span>
-              <span><FiMail size={14} /> usbinfo@usbaburau.com</span>
-              <span><FiGlobe size={14} /> www.usbaburau.com</span>
+              <span><FaMobileAlt />Mobile: +91 9448144949</span>
+              <span><FiMail  /> usbinfo@usbaburau.com</span>
+              <span><FiGlobe/> www.usbaburau.com</span>
             </address>
 
             <h4 style={{ marginTop: '1.25rem' }}>Branches</h4>
             <address>
               <span>UDUPI | MANIPAL</span>
-              <span><FiPhone size={14} /> 0820 2529649</span>
-              <span>📱 Mobile: +91 99643 80653</span>
+              <span><FiPhone /> 0820 2529649</span>
+              <span><FaMobileAlt />Mobile: +91 99643 80653</span>
             </address>
           </div>
 
@@ -96,7 +95,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} U.S. Babu Rau. All rights reserved.</p>
-        <p>Designed with ❤ for quality and trust.</p>
+        <p>Designed with love for quality and trust.</p>
       </div>
     </footer>
   );

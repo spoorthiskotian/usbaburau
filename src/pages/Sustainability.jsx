@@ -48,7 +48,7 @@ export default function Sustainability() {
         <div className="pillars-grid">
           {pillars.map((p, i) => (
             <AnimatedSection key={p.title} delay={i * 0.1} className="pillar-card">
-              <div className="pillar-icon">{p.icon}</div>
+              {/* <div className="pillar-icon">{p.icon}</div> */}
               <h3>{p.title}</h3>
               <p>{p.desc}</p>
             </AnimatedSection>

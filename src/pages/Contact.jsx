@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiPhone, FiPrinter, FiMail, FiGlobe, FiMapPin, FiSend } from 'react-icons/fi';
-
 import { FaWhatsapp } from 'react-icons/fa';
 import AnimatedSection from '../components/AnimatedSection';
 import './Contact.css';
@@ -60,7 +59,7 @@ export default function Contact() {
             <FaWhatsapp size={30} color="#25D366" />
             <div>
               <span>WhatsApp Us</span>
-              <strong>+91 94481 44949</strong>
+              <strong>+91 96861 41856</strong>
             </div>
           </button>
           <a href="https://www.usbaburau.com" target="_blank" rel="noreferrer" className="qa-card">
@@ -87,17 +86,17 @@ export default function Contact() {
               <div className="form-row">
                 <div className="form-group">
                   <label>Your Name *</label>
-                  <input name="name" value={form.name} onChange={handle} required placeholder="John Doe" />
+                  <input name="name" value={form.name} onChange={handle} required placeholder="name" />
                 </div>
                 <div className="form-group">
                   <label>Email Address *</label>
-                  <input name="email" type="email" value={form.email} onChange={handle} required placeholder="john@example.com" />
+                  <input name="email" type="email" value={form.email} onChange={handle} required placeholder="eg@gmail.com" />
                 </div>
               </div>
               <div className="form-row">
                 <div className="form-group">
                   <label>Phone Number</label>
-                  <input name="phone" value={form.phone} onChange={handle} placeholder="+91 98765 43210" />
+                  <input name="phone" value={form.phone} onChange={handle} placeholder=" " />
                 </div>
                 <div className="form-group">
                   <label>Subject *</label>
@@ -117,7 +116,7 @@ export default function Contact() {
 
         <AnimatedSection direction="right" delay={0.2} className="contact-info-wrap">
           <div className="info-card">
-            <h3>🏢 Head Office</h3>
+            <h3>Head Office</h3>
             <p><FiMapPin size={14} style={{ color: 'var(--orange)', marginRight: 6 }} />
               #13/7/858/1, Felix Pai Bazaar, Next to Janatha Bazaar,<br />
               G.H.S Road, Mangalore – 575 001
@@ -127,16 +126,16 @@ export default function Contact() {
             </p>
             <FiPrinter size={14} style={{ color: 'var(--orange)', marginRight: 6 }} />
 
-            <p>📱 Mobile: +91 9448144949</p>
+            <p> Mobile: +91 9448144949</p>
           </div>
 
           <div className="info-card">
-            <h3>📍 Branches</h3>
+            <h3>Branches</h3>
             <p><strong>Udupi | Manipal</strong></p>
             <p><FiPhone size={14} style={{ color: 'var(--orange)', marginRight: 6 }} />
               0820 2529649
             </p>
-            <p>📱 Mobile: +91 99643 80653</p>
+            <p>Mobile: +91 99643 80653</p>
           </div>
 
           {/* Map Embed */}
