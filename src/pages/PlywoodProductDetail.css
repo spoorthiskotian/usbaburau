@@ -3,7 +3,10 @@
   padding-top: 90px;
   padding-bottom: 5rem;
   min-height: 100vh;
-  background: var(--off-white);
+   background: url('https://plus.unsplash.com/premium_photo-1669916851446-7d81b1aa4904?q=80&w=742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+   /* background: url('https://images.unsplash.com/photo-1751594850523-e1f76402397c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat; */
+   position: relative;
+  display: flex;
 }
 
 .ppd-inner {
@@ -19,7 +22,7 @@
   gap: 0.4rem;
   font-size: 0.88rem;
   font-weight: 500;
-  color: var(--orange);
+  color: var(--white);
   text-decoration: none;
   margin-bottom: 1.75rem;
   transition: gap 0.2s;

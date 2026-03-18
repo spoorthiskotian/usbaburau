@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { FiPhone, FiPrinter, FiMail, FiGlobe, FiMapPin, FiSend } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
 import AnimatedSection from '../components/AnimatedSection';
+import { IoMdPhonePortrait } from "react-icons/io";
 import './Contact.css';
 
 export default function Contact() {
@@ -21,7 +22,7 @@ export default function Contact() {
 
   // WhatsApp redirect — opens WhatsApp chat with business number
   const whatsappClick = () => {
-    const phone = '919448144949'; // international format without +
+    const phone = '919686141856'; // international format without +
     const message = encodeURIComponent('Hello! I would like to enquire about your products.');
     window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
   };
@@ -96,7 +97,7 @@ export default function Contact() {
               <div className="form-row">
                 <div className="form-group">
                   <label>Phone Number</label>
-                  <input name="phone" value={form.phone} onChange={handle} placeholder=" " />
+                  <input name="phone" value={form.phone} onChange={handle} placeholder="+91 xxxxx xxxxx" />
                 </div>
                 <div className="form-group">
                   <label>Subject *</label>
@@ -115,7 +116,7 @@ export default function Contact() {
         </AnimatedSection>
 
         <AnimatedSection direction="right" delay={0.2} className="contact-info-wrap">
-          <div className="info-card">
+          {/* <div className="info-card">
             <h3>Head Office</h3>
             <p><FiMapPin size={14} style={{ color: 'var(--orange)', marginRight: 6 }} />
               #13/7/858/1, Felix Pai Bazaar, Next to Janatha Bazaar,<br />
@@ -124,9 +125,11 @@ export default function Contact() {
             <p><FiPhone size={14} style={{ color: 'var(--orange)', marginRight: 6 }} />
               +91 824 2420949, 2424249
             </p>
-            <FiPrinter size={14} style={{ color: 'var(--orange)', marginRight: 6 }} />
-
-            <p> Mobile: +91 9448144949</p>
+            <p><FiPrinter size={14} style={{ color: 'var(--orange)', marginRight: 6 }} />
+            +91 824 4279949
+            </p>
+          
+            <p> <IoMdPhonePortrait size={14} style={{ color: 'var(--orange)', marginRight: 6 }}/>Mobile: +91 9448144949</p>
           </div>
 
           <div className="info-card">
@@ -135,19 +138,20 @@ export default function Contact() {
             <p><FiPhone size={14} style={{ color: 'var(--orange)', marginRight: 6 }} />
               0820 2529649
             </p>
-            <p>Mobile: +91 99643 80653</p>
-          </div>
+            <p><IoMdPhonePortrait size={14} style={{ color: 'var(--orange)', marginRight: 6 }}/>Mobile: +91 99643 80653</p>
+          </div> */}
 
           {/* Map Embed */}
-          <div className="map-wrap">
+          <div className="map-wrap" style={{marginTop:'50px'}}>
             <iframe
               title="U.S. Babu Rau Location"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=74.83,12.86,74.87,12.90&layer=mapnik&marker=12.8703,74.8426"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.7647954570057!2d74.83761207936803!3d12.868011202198254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba350a13025ca43%3A0x822364f6219b6e05!2sU%20S%20Babu%20Rau!5e0!3m2!1sen!2sin!4v1773834322451!5m2!1sen!2sin"
               width="100%"
-              height="250"
+              height="400"
               style={{ border: 0, borderRadius: '14px' }}
               allowFullScreen
               loading="lazy"
+              
             />
           </div>
         </AnimatedSection>
