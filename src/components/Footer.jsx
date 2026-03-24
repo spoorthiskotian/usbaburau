@@ -6,10 +6,10 @@ import { FaMobileAlt } from "react-icons/fa";
 import './Footer.css';
 
 const groupCompanies = [
-  'Shishir Enterprises',
+  'Wantspace Real Estate Services',
   'Design Block – Interior Solutions',
-  'Dwarka Real Estate – Services',
-  'New Bharath School Supplies',
+  'USB Sales and Services - interior, exterior products and Turnkey projects',
+  'Pritvi Mitr- Industrial and Domestic Scrap Recyclers',
   'Savithri Devi Memorial Charitable Trust (R)',
 ];
 
@@ -57,24 +57,22 @@ export default function Footer() {
             <address>
               <span>
                 <FiMapPin />
-                #13/7/858/1, Felix Pai Bazaar,<br />
-                Next to Janatha Bazaar,<br />
-                G.H.S Road, Mangalore – 575 001
+                15-5-248/1, Sai Ashraya,<br />
+                Arya Samaj Rd, Mallikatte, Kadri, <br />
+                 Mangaluru, Karnataka 575003
               </span>
-              <span><FiPhone  /> +91 824 2420949, 2424249</span>
-              <span><FiPrinter  /> Fax: +91 824 4279949</span>
-
-              <span><FaMobileAlt />Mobile: +91 9448144949</span>
-              <span><FiMail  /> usbinfo@usbaburau.com</span>
-              <span><FiGlobe/> www.usbaburau.com</span>
+              <span><FiPhone  /> +91 96861 41856</span>
+             
+              <span><FiMail  /> Usbinfo@usbaburau.com </span>
+       
             </address>
 
-            <h4 style={{ marginTop: '1.25rem' }}>Branches</h4>
+            {/* <h4 style={{ marginTop: '1.25rem' }}>Branches</h4>
             <address>
               <span>UDUPI | MANIPAL</span>
               <span><FiPhone /> 0820 2529649</span>
               <span><FaMobileAlt />Mobile: +91 99643 80653</span>
-            </address>
+            </address> */}
           </div>
 
           {/* Group Companies */}

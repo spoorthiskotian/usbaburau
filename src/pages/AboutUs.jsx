@@ -7,8 +7,8 @@ const timeline = [
   { year: ' ', event: 'Opened branches in Udupi and Manipal to serve the growing coastal region market.' },
   { year: ' ', event: 'Ventured into new product lines including Laminated Floorings and Wallpapers.' },
   { year: ' ', event: 'Headquarters established in Mangalore, GHS Road. Expanded into Interior Solutions division.' },
-  { year: ' ', event: 'Launched USP Premium Ply – 8-year warranty plywood made from A+ grade hardwood.' },
-  { year: 'Today', event: 'Most trusted company in Dakshina Kannada with 15+ product categories and 5 group companies.' },
+  { year: ' ', event: 'Launched USB Premium Ply – 8-year warranty plywood made from A+ grade hardwood.' },
+  { year: 'Today', event: 'Most trusted company in Dakshni kannada, Udupi and across Karnataka with 15+ product categories and 5 group companies.' },
 ];
 
 export default function AboutUs() {

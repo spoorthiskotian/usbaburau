@@ -69,14 +69,14 @@ export default function Home() {
       <section className="hero">
         <div className="hero-overlay" />
         <div className="hero-content">
-          <motion.span
+          {/* <motion.span
             className="hero-badge"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
             Estd. 1949 · Trusted for 75+ Years
-          </motion.span>
+          </motion.span> */}
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -205,7 +205,7 @@ export default function Home() {
           <h2>Group Companies</h2>
         </AnimatedSection>
         <div className="group-grid">
-          {['Shishir Enterprises', 'Design Block – Interior Solutions', 'Dwarka Real Estate – Services', 'New Bharath School Supplies', 'Savithri Devi Memorial Charitable Trust (R)'].map((c, i) => (
+          {['Wantspace Real Estate Services', 'Design Block – Interior Solutions', 'USB Sales and Services - interior, exterior products and Turnkey projects', 'Pritvi Mitr- Industrial and Domestic Scrap Recyclers', 'Savithri Devi Memorial Charitable Trust (R)'].map((c, i) => (
             <AnimatedSection key={c} delay={i * 0.08} className="group-card">
              
               <span>{c}</span>
@@ -221,7 +221,7 @@ export default function Home() {
           <p>Visit our showroom or call our experts today.</p>
           <div className="cta-btns">
             <Link to="/contact" className="btn-primary">Contact Us <FiArrowRight /></Link>
-            <a href="tel:+918242420949" className="btn-outline-white"> <IoCallSharp />+91 824 2420949</a>
+            <a href="tel:+919686141856" className="btn-outline-white"> <IoCallSharp />+91 96861 41856</a>
           </div>
         </AnimatedSection>
       </section>

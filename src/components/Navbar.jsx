@@ -55,7 +55,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <a href="tel:+918242420949" className="nav-cta">
+        <a href="tel: +91 96861 41856" className="nav-cta">
           <FiPhone size={16} /> Call an Expert
         </a>
 
