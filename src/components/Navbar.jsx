@@ -78,7 +78,7 @@ export default function Navbar() {
                 <Link to={link.path} className={`mobile-link ${location.pathname === link.path ? 'active' : ''}`}>{link.label}</Link>
               </motion.div>
             ))}
-            <a href="tel:+918242420949" className="mobile-cta"><FiPhone size={16} /> Call an Expert</a>
+            <a href="tel:+91 96861 41856" className="mobile-cta"><FiPhone size={16} /> Call an Expert</a>
           </motion.div>
         )}
       </AnimatePresence>

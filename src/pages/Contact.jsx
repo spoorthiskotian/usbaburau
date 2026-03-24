@@ -179,7 +179,7 @@ export default function Contact() {
     const body = encodeURIComponent(
       `Name: ${form.name}\nPhone: ${form.phone}\nEmail: ${form.email}\nMessage: ${form.message}`
     );
-    const mailtoLink = `mailto:spoorthisk24@gmail.com?subject=${encodeURIComponent(form.subject)}&body=${body}`;
+    const mailtoLink = `mailto:Usbinfo@usbaburau.com?subject=${encodeURIComponent(form.subject)}&body=${body}`;
     window.open(mailtoLink, '_blank');   // ← changed from window.location.href
     setTimeout(() => setSent(true), 500);
   };
@@ -217,12 +217,12 @@ export default function Contact() {
             </div>
           </a>
 
-          <a href="mailto:spoorthisk24@gmail.com" className="qa-card">
+          <a href="mailto:Usbinfo@usbaburau.com" className="qa-card">
             <FiMail size={28} color="var(--orange)" />
             <div>
               <span>Email Us</span>
               {/* ✅ FIX 4: display email matches mailto target */}
-              <strong>spoorthisk24@gmail.com</strong>
+              <strong>Usbinfo@usbaburau.com</strong>
             </div>
           </a>
 
@@ -331,7 +331,7 @@ export default function Contact() {
 
         <AnimatedSection direction="right" delay={0.2} className="contact-info-wrap">
 
-          <div className="info-card">
+          {/* <div className="info-card">
             <h3>Head Office</h3>
             <p>
               <FiMapPin size={14} style={{ color: 'var(--orange)', marginRight: 6 }} />
@@ -363,19 +363,20 @@ export default function Contact() {
               <IoMdPhonePortrait size={14} style={{ color: 'var(--orange)', marginRight: 6 }} />
               Mobile: +91 99643 80653
             </p>
-          </div>
+          </div> */}
 
           {/* Map Embed */}
           <div className="map-wrap" style={{ marginTop: '30px' }}>
             <iframe
               title="U.S. Babu Rau Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.7647954570057!2d74.83761207936803!3d12.868011202198254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba350a13025ca43%3A0x822364f6219b6e05!2sU%20S%20Babu%20Rau!5e0!3m2!1sen!2sin!4v1773834322451!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243.09309637831055!2d74.85171425779654!3d12.876212292097902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35b3320a9cf41%3A0x1d155ef5f3167fb9!2sSai%20Ashraya!5e0!3m2!1sen!2sin!4v1774341708352!5m2!1sen!2sin"
               width="100%"
               height="400"
               style={{ border: 0, borderRadius: '14px' }}
               allowFullScreen
               loading="lazy"
             />
+           
           </div>
 
         </AnimatedSection>
